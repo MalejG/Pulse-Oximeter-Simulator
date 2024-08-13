@@ -38,8 +38,8 @@ void Process::changePatient()
 
 void Process::measure()
 {
-	float randomModifier = (std::rand() / static_cast<float>(RAND_MAX)) * 0.02 + 0.985;
+	float randomModifier = (rand() / static_cast<float>(RAND_MAX)) * 0.02 + 0.985;
 	m_OxygenSaturation = getPatient().getAbsorbtionR()/ getPatient().getAbsorbtionIR() * randomModifier * 100;
-	float randomModifiero = (std::rand() / static_cast<float>(RAND_MAX)) * 0.01 + 0.99;
+	float randomModifiero = (rand() / static_cast<float>(RAND_MAX)) * 0.01 + 0.99;
 	m_HeartRateMeasure = getPatient().getBeatRate() * randomModifiero * 100;
 }
