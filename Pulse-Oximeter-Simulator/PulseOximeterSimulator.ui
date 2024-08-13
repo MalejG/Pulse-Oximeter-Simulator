@@ -161,7 +161,7 @@
  </customwidgets>
  <resources>
   <include location="PulseOximeterSimulator.qrc"/>
-   <include location="PulseOximeterSimulator.qrc"/>
+  <include location="PulseOximeterSimulator.qrc"/>
  </resources>
  <connections/>
 </ui>
